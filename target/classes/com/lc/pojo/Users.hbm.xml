@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-12-17 16:35:30 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="com.lc.pojo.Users" table="users" catalog="abc" optimistic-lock="version">
+        <id name="uid" type="java.lang.Integer">
+            <column name="uid" />
+            <generator class="identity" />
+        </id>
+        <property name="uname" type="string">
+            <column name="uname" />
+        </property>
+        <property name="upwd" type="string">
+            <column name="upwd" />
+        </property>
+    </class>
+</hibernate-mapping>
